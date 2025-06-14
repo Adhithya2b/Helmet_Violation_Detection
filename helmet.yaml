@@ -1,0 +1,8 @@
+# Helmet Detection Dataset
+path: ../dataset_split  # dataset root dir
+train: train/images  # train images
+val: val/images  # val images
+
+# Classes
+nc: 2
+names: ['helmet', 'no_helmet']
