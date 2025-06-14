@@ -3,19 +3,19 @@
 A computer vision project for detecting helmet violations using YOLOv5.
 
 ## Project Structure
-├── yolov5/ # YOLOv5 implementation
-├── dataset_split/ # Dataset split into train and val
-│ ├── train/
-│ │ ├── images/
-│ │ └── labels/
-│ └── val/
-│ ├── images/
-│ └── labels/
-├── formatting.py # Converts annotations to YOLO format
-├── gpuCheck.py # Checks CUDA availability and GPU device
-├── splitting.py # Splits dataset into train and validation sets
-├── normalize_labels.py # Normalizes bounding box coordinates
-└── README.md
+├── yolov5/                   # YOLOv5 implementation (official or custom)
+├── dataset_split/            # Scripts and structure for splitting dataset
+│   ├── train/                # Training dataset
+│   │   ├── images/          # Training images
+│   │   └── labels/          # Training labels in YOLO format
+│   └── val/                  # Validation dataset
+│       ├── images/          # Validation images
+│       └── labels/          # Validation labels in YOLO format
+├── formatting.py             # Converts dataset annotations to YOLO format
+├── gpuCheck.py               # Checks CUDA availability and GPU device
+├── splitting.py              # Splits the dataset into train and validation sets
+├── normalize_labels.py       # Normalizes bounding box coordinates for YOLO
+└── README.md                 # Project documentation
 
 ## Setup
 
